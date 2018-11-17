@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <list>
-
+#include "Macierz.h"
 
 using namespace std;
 
@@ -72,7 +72,16 @@ int main()
 {
 	double i = 100;
 	//Zadanie2(6321246989923);
-	Zadanie3(i);
+	//Zadanie3(i);
+
+	Macierz kwadrat(8, 10), prostokat(kwadrat);
+	kwadrat.Wypisz();
+	prostokat.Wypisz();
+
+	Macierz wynikowa = kwadrat + prostokat;
+	wynikowa.Wypisz();
+	
+
     return 0;
 }
 
